@@ -140,23 +140,6 @@ namespace app.CholcaGiova.api.Controllers
             }
         }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     }
+
 }
