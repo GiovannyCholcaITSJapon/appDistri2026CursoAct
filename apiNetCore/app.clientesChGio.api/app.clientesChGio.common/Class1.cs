@@ -1,4 +1,4 @@
-﻿namespace app.clientesChGio.services
+﻿namespace app.clientesChGio.common
 {
     public class Class1
     {
