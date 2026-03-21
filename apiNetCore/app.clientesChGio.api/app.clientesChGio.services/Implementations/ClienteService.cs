@@ -37,7 +37,8 @@ namespace app.clientesChGio.services.Implementations
 
                 cliente = await _repository.Insertar(cliente);
 
-                response.Result = new ClienteDTO
+
+                var resultDto = new ClienteDTO
                 {
                     Id = cliente.Id,
                     Nombre = cliente.Nombre,
@@ -48,6 +49,8 @@ namespace app.clientesChGio.services.Implementations
                     Telefono = cliente.Telefono,
                     Estado = cliente.Estado
                 };
+
+                response.Result = resultDto;
 
                 response.Success = true;
 
@@ -146,7 +149,7 @@ namespace app.clientesChGio.services.Implementations
                     CedulaIdentidad = clienteDTO.CedulaIdentidad,
                     FechaNacimiento = clienteDTO.FechaNacimiento,
                     Telefono = clienteDTO.Telefono,
-                    Estado = true,
+                    Estado = clienteDTO.Estado,
                     Fecha = DateTime.Now
                 };
 
@@ -155,6 +158,8 @@ namespace app.clientesChGio.services.Implementations
                 response.Result = clienteDTO;
                 response.Result.Id = id;
                 response.Success = true;
+
+                await _rabbitMQService.PublishMessage(response.Result, "clienteDireccionEvent");
             }
             catch (Exception ex)
             {

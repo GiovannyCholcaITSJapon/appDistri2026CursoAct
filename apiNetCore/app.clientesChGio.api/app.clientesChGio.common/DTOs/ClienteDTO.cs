@@ -17,8 +17,13 @@ namespace app.clientesChGio.common.DTOs
         [Required(ErrorMessage = "El campo Email es obligatorio")]
         public string? Email { get; set; }
 
+
+
         [Required(ErrorMessage = "El campo CedulaIdentidad es obligatorio")]
+        [StringLength(10, ErrorMessage = "La cédula no puede exceder los 10 dígitos")]
         public string? CedulaIdentidad { get; set; }
+
+
 
         [Required(ErrorMessage = "El campo FechaNacimiento es obligatorio")]
         public DateTime FechaNacimiento { get; set; }
