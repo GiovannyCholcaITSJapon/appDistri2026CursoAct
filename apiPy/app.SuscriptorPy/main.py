@@ -53,6 +53,20 @@ def callback(ch, method, properties, body):
         print(f"Teléfono: {mensaje.get('Telefono')}")
         print("-" * 40)
 
+
+        #guardar en una tabla DireccionCliente
+        #  //BDD EcPedidos mysql tabla
+        # public class DireccionCliente
+        # {
+        #     public int id { get; set; } 
+        #     public int ClienteId { get; set; }
+        #     public string NombreCompleto { get; set; } = string.Empty;
+        #     public string Email { get; set; } = string.Empty;
+        #     public string DireccionCompleta { get; set; } = string.Empty;
+        # }
+
+        
+
     except Exception as e:
         print("❌ Error procesando mensaje:", str(e))
 

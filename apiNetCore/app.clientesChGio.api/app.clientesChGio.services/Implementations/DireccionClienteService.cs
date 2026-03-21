@@ -35,6 +35,21 @@ namespace app.clientesChGio.services.Implementations
                 dto.Id = entity.Id;
                 response.Result = dto;
                 response.Success = true;
+
+
+                var direccionClienteEvent = new DireccionClienteEventDto();
+                direccionClienteEvent.ClienteId = dto.ClienteId;
+                //consultar cliente por id
+                direccionClienteEvent.NombreCompleto = "";
+                direccionClienteEvent.Email = "";
+                direccionClienteEvent.DireccionCompleta = "";
+
+                //enviar a la cola
+              
+
+
+
+
             }
             catch (Exception ex)
             {
