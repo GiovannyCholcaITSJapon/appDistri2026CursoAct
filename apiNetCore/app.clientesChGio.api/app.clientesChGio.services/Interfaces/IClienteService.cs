@@ -4,15 +4,15 @@ namespace app.clientesChGio.services.Interfaces
 {
     public interface IClienteService
     {
-        Task<BaseResponse<ClienteDTO>> CrearCliente(ClienteDTO clienteDTO);
+        Task<BaseResponse<ClienteDTO>> Insertar(ClienteDTO clienteDTO);
 
-        Task<BaseResponse<ClienteDTO>> ObtenerCliente(int id);
+        Task<BaseResponse<ClienteDTO>> SeleccionarUno(int id);
 
-        Task<BaseResponse<List<ClienteDTO>>> ObtenerClientes();
+        Task<BaseResponse<List<ClienteDTO>>> SeleccionarTodos();
 
-        Task<BaseResponse<ClienteDTO>> ActualizarCliente(int id, ClienteDTO cliente);
+        Task<BaseResponse<ClienteDTO>> Actualizar(int id, ClienteDTO cliente);
 
-        Task<BaseResponse<string>> EliminarCliente(int id);
+        Task<BaseResponse<string>> Eliminar(int id);
 
     }
 }

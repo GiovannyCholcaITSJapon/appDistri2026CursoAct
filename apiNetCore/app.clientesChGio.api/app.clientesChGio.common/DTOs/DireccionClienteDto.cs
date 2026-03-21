@@ -1,7 +1,25 @@
-﻿namespace app.clientesChGio.common.DTOs
-{
-    public class DireccionClienteDto
-    {
+﻿using System.ComponentModel.DataAnnotations;
 
+namespace app.clientesChGio.common.DTOs
+{
+    public class DireccionClienteDTO
+    {
+        public int Id { get; set; }
+
+        [Required]
+        public int ClienteId { get; set; }
+
+        [Required]
+        public string? Provincia { get; set; }
+
+        [Required]
+        public string? Ciudad { get; set; }
+
+        [Required]
+        public string? Direccion { get; set; }
+
+        public string? CodigoPostal { get; set; }
+
+        public bool Estado { get; set; }
     }
 }

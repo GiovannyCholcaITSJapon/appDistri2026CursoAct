@@ -4,15 +4,15 @@ namespace app.clientesChGio.dataAccess.repositories
 {
     public interface IClienteRepository
     {
-        Task<Cliente> GetCliente(int id);
+        Task<Cliente> SeleccionarUno(int id);
 
-        Task<Cliente> CreateCliente(Cliente cliente);
+        Task<Cliente> Insertar(Cliente cliente);
 
-        Task<List<Cliente>> GetClientes();
+        Task<List<Cliente>> SeleccionarTodos();
 
-        Task UpdateCliente(Cliente cliente);
+        Task Actualizar(Cliente cliente);
 
-        Task DeleteCliente(int id);
+        Task Eliminar(int id);
 
     }
 }

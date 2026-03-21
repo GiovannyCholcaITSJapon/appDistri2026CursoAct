@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "app.clientesChGio.entities"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "app.clientesChGio.services", "app.clientesChGio.services\app.clientesChGio.services.csproj", "{459DECDC-0187-4212-8013-CB3BA3E87B88}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "app.clientesChGio.common", "app.clientesChGio.common\app.clientesChGio.common.csproj", "{6D91CCAD-0280-478A-956D-EED5375E5177}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{459DECDC-0187-4212-8013-CB3BA3E87B88}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{459DECDC-0187-4212-8013-CB3BA3E87B88}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{459DECDC-0187-4212-8013-CB3BA3E87B88}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6D91CCAD-0280-478A-956D-EED5375E5177}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6D91CCAD-0280-478A-956D-EED5375E5177}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6D91CCAD-0280-478A-956D-EED5375E5177}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6D91CCAD-0280-478A-956D-EED5375E5177}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

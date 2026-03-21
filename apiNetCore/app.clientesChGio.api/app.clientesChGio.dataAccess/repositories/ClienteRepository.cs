@@ -10,27 +10,27 @@ namespace app.clientesChGio.dataAccess.repositories
 
         }
 
-        public async Task<Cliente> CreateCliente(Cliente cliente)
+        public async Task<Cliente> Insertar(Cliente cliente)
         {
             return await InsertEntity(cliente);
         }
 
-        public async Task DeleteCliente(int id)
+        public async Task Eliminar(int id)
         {
             await DeleteEntity(id);
         }
 
-        public async Task<Cliente> GetCliente(int id)
+        public async Task<Cliente> SeleccionarUno(int id)
         {
            return await SelectEntity(id);
         }
 
-        public async Task<List<Cliente>> GetClientes()
+        public async Task<List<Cliente>> SeleccionarTodos()
         {
             return await SelectEntitiesAll();
         }
 
-        public async Task UpdateCliente(Cliente cliente)
+        public async Task Actualizar(Cliente cliente)
         {
             await UpdateEntity(cliente);
         }

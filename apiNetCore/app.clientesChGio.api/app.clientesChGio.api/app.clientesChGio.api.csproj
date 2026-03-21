@@ -15,7 +15,9 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\app.clientesChGio.dataAccess\app.clientesChGio.dataAccess.csproj" />
+	  <ProjectReference Include="..\app.clientesChGio.dataAccess\app.clientesChGio.dataAccess.csproj" />
+	  <ProjectReference Include="..\app.clientesChGio.services\app.clientesChGio.services.csproj" />
+
   </ItemGroup>
 
 </Project>
